@@ -10,7 +10,7 @@ const personRoutes = require('./routes/personRoutes');
 // use the router
 app.use("/person", personRoutes);
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 const menuItemRoutes = require("./routes/menuItemRoutes");
 app.use("/menu", menuItemRoutes);
